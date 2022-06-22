@@ -24,7 +24,7 @@ builder.Services.AddSwaggerGen(swaggerGenOptions =>
 
 var app = builder.Build();
 app.UseSwagger();
-app.UseSwaggerUI(swaggerUIOption =>
+app.UseSwaggerUI(swaggerUIOptions =>
 {
     swaggerUIOptions.DocumentTitle = "ASP.NET and React";
     swaggerUIOptions.SwaggerEndpoint("/swagger/v1/swagger.json", "Web API serving a Post model");
